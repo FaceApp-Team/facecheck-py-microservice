@@ -48,6 +48,6 @@ def search_embedding(embedding: list):
         query=embedding,  # vector to compare
         limit=1,
         using="face",  # must match collection config
-        score_threshold=0.75,
+        score_threshold=0.35,  # lower is better for COSINE distance
     )
     return result
